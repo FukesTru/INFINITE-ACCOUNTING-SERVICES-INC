@@ -1,0 +1,33 @@
+{
+  "name": "infinite-accounting-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static-exported Next.js website for Infinite Accounting Services Inc (Orland Park, IL).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out",
+    "typecheck": "tsc --noEmit",
+    "images:fetch": "node scripts/fetch-images.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource/league-spartan": "5.3.0",
+    "lucide-react": "1.47.0",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.5",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "serve": "14.2.6",
+    "sharp": "0.35.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3"
+  }
+}

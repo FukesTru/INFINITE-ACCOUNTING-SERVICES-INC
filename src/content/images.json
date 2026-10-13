@@ -1,0 +1,41 @@
+{
+  "_comment": "Image registry. Each entry maps to public/images/<file>-<width>.webp variants produced by scripts/optimize-images.mjs from the full-size Higgsfield originals. 'id' is the slot name used in the build brief; prompts live in docs/higgsfield-image-prompts.md.",
+  "aspects": {
+    "16:9": { "ratio": [16, 9], "widths": [640, 960, 1280, 1920] },
+    "4:3": { "ratio": [4, 3], "widths": [480, 800, 1200] },
+    "21:9": { "ratio": [21, 9], "widths": [960, 1600, 2400] }
+  },
+  "images": {
+    "home-hero": { "id": "H-HERO", "aspect": "16:9", "og": true, "alt": "Bright accountant's desk by a window with an open laptop, notebook, coffee cup and small green plant" },
+    "home-bookkeeping": { "id": "H-BOOK", "aspect": "4:3", "alt": "Hands reconciling bank statements with a calculator and laptop beside neatly stacked folders" },
+    "home-tax": { "id": "H-TAX", "aspect": "4:3", "alt": "Organized tax documents in a blue folder with a pen, reading glasses and calculator on a clean desk" },
+    "home-local": { "id": "H-LOCAL", "aspect": "16:9", "alt": "Tree-lined suburban main street with brick storefronts on a bright day in the southwest suburbs" },
+    "shared-cta-band": { "id": "CTA-BAND", "aspect": "21:9", "alt": "" },
+    "shared-og-default": { "id": "OG-DEFAULT", "aspect": "16:9", "og": true, "alt": "Clean navy and green desk scene with a laptop, notebook and plant by a window" },
+    "about-hero": { "id": "A-HERO", "aspect": "16:9", "og": true, "alt": "Welcoming small office with a round meeting table, two chairs and a notebook in soft window light" },
+    "about-desk": { "id": "A-DESK", "aspect": "4:3", "alt": "Desk with a planner, pen, tablet and mug set up for a client meeting" },
+    "services-hero": { "id": "S-HERO", "aspect": "16:9", "og": true, "alt": "Overhead view of a laptop, calculator, notebook and navy and green folders on a white desk" },
+    "bookkeeping-hero": { "id": "B-HERO", "aspect": "16:9", "og": true, "alt": "Laptop showing a bookkeeping ledger beside receipts and a calculator on a bright desk" },
+    "bookkeeping-process": { "id": "B-PROCESS", "aspect": "4:3", "alt": "Hands sorting receipts into labeled folders next to a computer mouse" },
+    "bookkeeping-owner": { "id": "B-OWNER", "aspect": "4:3", "alt": "Small-business owner at a shop counter with a laptop and a box of receipts to organize" },
+    "tax-hero": { "id": "T-HERO", "aspect": "16:9", "og": true, "alt": "Desk with a stack of tax papers, a calculator, pen and blue folder during tax season" },
+    "tax-docs": { "id": "T-DOCS", "aspect": "4:3", "alt": "Paperwork, envelopes and a pen laid out like a checklist of tax documents" },
+    "tax-owner": { "id": "T-OWNER", "aspect": "4:3", "alt": "Business owner signing a document across a meeting table during a tax review" },
+    "service-areas-hero": { "id": "SA-HERO", "aspect": "16:9", "og": true, "alt": "Aerial view of leafy suburban neighborhoods and a small commercial street at golden hour" },
+    "orland-park-hero": { "id": "O-PARK-HERO", "aspect": "16:9", "og": true, "alt": "Modern suburban professional office building with a glass entrance and landscaping" },
+    "tinley-park-hero": { "id": "TINLEY-HERO", "aspect": "16:9", "og": true, "alt": "Suburban downtown street with small shops and a commuter train platform in the distance" },
+    "palos-heights-hero": { "id": "PHEIGHTS-HERO", "aspect": "16:9", "og": true, "alt": "Peaceful lakeside walking path lined with mature trees in early autumn light" },
+    "palos-hills-hero": { "id": "PHILLS-HERO", "aspect": "16:9", "og": true, "alt": "Quiet residential street at dusk with a home office window glowing and a laptop on the desk" },
+    "frankfort-hero": { "id": "FRANKFORT-HERO", "aspect": "16:9", "og": true, "alt": "Historic small-town downtown with brick storefronts, boutique awnings and a green village square" },
+    "crestwood-hero": { "id": "CRESTWOOD-HERO", "aspect": "16:9", "og": true, "alt": "Row of independent neighborhood shops with a contractor's pickup truck parked outside" },
+    "worth-hero": { "id": "WORTH-HERO", "aspect": "16:9", "og": true, "alt": "Family-friendly neighborhood park with a curving path and shade trees" },
+    "orland-hills-hero": { "id": "OHILLS-HERO", "aspect": "16:9", "og": true, "alt": "Calm suburban cul-de-sac with a home office visible through a front window" },
+    "testimonials-hero": { "id": "TEST-HERO", "aspect": "16:9", "og": true, "alt": "Two coffee mugs beside an open notebook on a table in soft window light" },
+    "blog-hero": { "id": "BLOG-HERO", "aspect": "16:9", "og": true, "alt": "Writing desk with an open notebook, laptop and small plant in daylight" },
+    "blog-bookkeeping-checklist": { "id": "BLOG-1", "aspect": "16:9", "og": true, "alt": "Bookkeeping checklist notepad with green check marks next to a pen and laptop" },
+    "blog-business-tax-records": { "id": "BLOG-2", "aspect": "16:9", "og": true, "alt": "Receipts and invoices organized in a box and folder for business tax preparation" },
+    "blog-bookkeeper-vs-diy": { "id": "BLOG-3", "aspect": "16:9", "og": true, "alt": "Laptop accounting dashboard beside a handwritten paper ledger" },
+    "blog-irs-notice": { "id": "BLOG-4", "aspect": "16:9", "og": true, "alt": "Opened envelope and letter on a calm, tidy desk with a pen and cup of tea" },
+    "contact-hero": { "id": "CONTACT-HERO", "aspect": "16:9", "og": true, "alt": "Phone resting on a reception desk beside a notebook and coffee" }
+  }
+}
