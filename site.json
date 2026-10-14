@@ -1,0 +1,70 @@
+{
+  "business": {
+    "name": "Infinite Accounting Services",
+    "known_as": "Infinite Accounting",
+    "legal_name": "Infinite Accounting Services Inc",
+    "owner": "Danielle Douglas",
+    "owner_title": "President",
+    "founded": "2018",
+    "trade": "bookkeeping and tax firm",
+    "street": "14475 John Humphrey Dr, Ste 150",
+    "city": "Orland Park",
+    "state": "IL",
+    "postal_code": "60462",
+    "country": "US",
+    "phone": "(708) 232-3003",
+    "phone_accepts_texts": true,
+    "email": "danielle@infiniteaccountingservices.com",
+    "website_current": "https://www.infiniteaccountingservices.com",
+    "timezone": "America/Chicago"
+  },
+  "online": {
+    "facebook": "https://www.facebook.com/AccountingPlans4U/",
+    "instagram": "https://www.instagram.com/infiniteaccounting/",
+    "google_business_profile": "",
+    "google_review_link": ""
+  },
+  "hours": {
+    "monday": "8 am to 3 pm",
+    "tuesday": "8 am to 3 pm",
+    "wednesday": "By appointment",
+    "thursday": "8 am to 3 pm",
+    "friday": "8 am to 3 pm",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "source": "Current website. MapQuest lists 9 am to 2 pm with Wednesday closed. Client to confirm (VERIFY.md)."
+  },
+  "areas_served": [
+    "Orland Park",
+    "Tinley Park",
+    "Palos Heights",
+    "Palos Hills",
+    "Frankfort",
+    "Crestwood",
+    "Worth",
+    "Orland Hills"
+  ],
+  "services": [
+    "Bookkeeping Services",
+    "Tax Services"
+  ],
+  "booking_system_current": "",
+  "brand": {
+    "colour_main": "#0B2F57",
+    "colour_accent": "#1E8449",
+    "colours_other": ["#1D5FA8", "#E8F5EC", "#F4F8FB", "#082340"],
+    "font": "League Spartan (headings, as on the current site) and Inter (body)",
+    "notes": "Blue and Green. Logo supplied as JPEG only; no file received yet."
+  },
+  "images": [],
+  "must_keep": "",
+  "integrations": {
+    "form_embed": "",
+    "chat_widget": "",
+    "review_link": ""
+  },
+  "crm_location_id": "",
+  "vercel_project": "",
+  "preview_url": "",
+  "domain": "www.infiniteaccountingservices.com"
+}

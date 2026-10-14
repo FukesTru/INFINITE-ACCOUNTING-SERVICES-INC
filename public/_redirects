@@ -1,3 +1,0 @@
-# Netlify: canonical host is www. (Other hosts: see README → Deployment.)
-https://infiniteaccountingservices.com/*  https://www.infiniteaccountingservices.com/:splat  301!
-http://infiniteaccountingservices.com/*   https://www.infiniteaccountingservices.com/:splat  301!

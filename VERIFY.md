@@ -1,0 +1,83 @@
+# Infinite Accounting Services: what we need from you
+
+Hi Danielle,
+
+Your new website is built. Before it goes live, we need a few things from you and a few facts checked. Wherever something is missing, the preview site shows the word [VERIFY] or a labelled space for a photo. Please reply with your answers and attach any photos or files. Short answers are fine.
+
+One security note first. The onboarding form included the login and password for your domain account. We did not copy them anywhere. Please change that password now, and in future share access by inviting us as a user instead of sending a password.
+
+## Part A. Things we still need from you
+
+1. **Your logo.** We received "JPEG only" and no file. Please send your logo as a PNG with a transparent background, or as an SVG. If you have an icon-only version (just the symbol), send that too. Until then, the site uses a simple temporary wordmark.
+2. **A photo of you.** A portrait for the About page and the home page, ideally in your Orland Park office. A recent phone photo in good light works. The site currently shows your initials in that spot.
+3. **Any other real photos.** For example, your office front, reception or desk. You mentioned you have fewer than 15. Please send the ones you are happy to show.
+4. **Your prices.** The Pricing page and the service pages have a "From $" line for each service. Please give a starting price for each one, or tell us you prefer "quoted after a free consultation" with no number:
+   - Monthly bookkeeping (per month)
+   - Catch-up bookkeeping (per project)
+   - QuickBooks setup or clean-up (per project)
+   - Individual tax return
+   - Business tax return
+   - Help with an IRS or Illinois notice
+5. **How clients pay.** Which payment methods you accept, such as check, card or bank transfer.
+6. **Your credentials and registrations.** Any you would like listed, such as your PTIN (tax preparer number) or other registrations. We have not called you a CPA or an Enrolled Agent anywhere and will not unless you confirm it.
+7. **Google Business Profile.** The form said "Not sure". We need your profile link and your "write a review" link, so the "Leave us a review" buttons go to Google. They point to your Facebook page for now.
+8. **Real reviews.** Once the Google profile is confirmed, we will copy real reviews word for word with each reviewer's name as they posted it. We have not written any reviews.
+9. **How long a first consultation takes.** For example, 30 minutes.
+
+## Part B. Facts please confirm or correct
+
+### Every page (contact details)
+
+- **Business name.** Infinite Accounting Services, legal name Infinite Accounting Services Inc. Your form wrote the legal name in capitals; we show it in normal capitals.
+- **Address.** 14475 John Humphrey Dr, Ste 150, Orland Park, IL 60462. Your old website, Yelp, BBB and MapQuest still show 6500 W College Dr, Palos Heights, IL 60463. Please confirm the new address. Once confirmed, those listings should be updated to match.
+- **Phone.** (708) 232-3003, and that it accepts text messages.
+- **Email.** danielle@infiniteaccountingservices.com. Your Facebook page shows info@infiniteaccountingservices.com. Which should the website use?
+- **Office hours.** Monday, Tuesday, Thursday and Friday 8 am to 3 pm, Wednesday by appointment, weekends closed. These came from your current website, but MapQuest shows 9 am to 2 pm with Wednesday closed. Which is right?
+
+### Home page
+
+- That Infinite Accounting Services Inc was incorporated in Illinois in 2018. The site says "serving clients since 2018".
+
+### About page
+
+- That you started by helping family members keep their business bank accounts in order.
+- That you have about 20 years of experience in the accounting industry.
+- That you hold an MBA.
+- The rest of your story as written. Please change anything that does not sound like you.
+
+### Services and Bookkeeping pages
+
+- That you offer **payroll support**.
+- The full service list: QuickBooks setup, clean-up and training; catch-up bookkeeping; accounts receivable and payable; cash flow reporting; financial statements; individual and business tax returns; tax planning; IRS and Illinois notice help; back-year filings. These came from your public listings. Please remove anything you do not offer.
+
+### What to expect, Service areas and FAQ pages
+
+- That you **work with clients remotely** by phone, text and email, and hold consultations by phone as well as in the office.
+- That you have a safe way for clients to share tax documents, and what it is (for example a client portal or secure upload).
+- That clients receive an engagement letter before work begins.
+
+### Palos Heights page
+
+- "We've served Palos Heights clients for years." This is based on your old Palos Heights address.
+
+### Orland Park page
+
+- That clients can drop off documents at the office during office hours after calling or texting first.
+
+### Town pages, general
+
+- Each town page describes the kinds of clients you help there (for example restaurants in Tinley Park, contractors in Crestwood, freelancers in Palos Hills). Please tell us if any of these do not match the clients you want.
+
+### Answers that describe tax rules
+
+- Several FAQ answers explain general tax rules in plain English. For example: who needs to make estimated payments, the home office deduction, Schedule C, the lower filing threshold for self-employment income, and filing jointly when one spouse has a business. Please read them once and correct anything you would say differently.
+
+### Legal pages
+
+- The Privacy Policy and Terms of Use are new, because your old site had neither. Please read them, and have your attorney review them if you wish. They say you only text people about their inquiry and that anyone can reply STOP to opt out.
+
+### Photos made with AI
+
+- We generated 31 photos with Higgsfield for the site, such as desks, documents and local street scenes. None of them show a person's face. They are not on the site yet. If you approve their use, we will add them. If you would rather use only your own photos, we will leave them out.
+
+Thank you. Once we have your answers, we will update the site and send you a new link to review.
