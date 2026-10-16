@@ -13,7 +13,7 @@ The website for **Infinite Accounting Services Inc**, a bookkeeping and tax firm
 | `public/assets/site.js` | Menus, smooth "Contact us" scrolling, the built-in form and chat, scroll movement. |
 | `site.json` | The business details every page uses. |
 | `VERIFY.md` | What the client still needs to send or confirm, written so it can be emailed as is. |
-| `IMAGE-PROMPTS.md` | The 31 Higgsfield photos already generated, where each fits, and how to add them. |
+| `IMAGE-PROMPTS.md` | The 31 Higgsfield photos, where each one is used, and how to add or regenerate one. |
 | `tools/check.mjs` | The automatic checks. Run `node tools/check.mjs` before every ship. |
 | `tools/golive-check.sh` | The domain check at go-live. |
 
@@ -35,7 +35,7 @@ Every page has its own title, description and canonical. Each also has Open Grap
    - **Review link.** "Leave us a review" points to the Facebook page until it is set.
 2. **Vercel.** Import this repo as a new Vercel project. Then fill in `vercel_project` and `preview_url` in `site.json`.
 3. **The client's answers** in `VERIFY.md`. Every [VERIFY] on the site and the portrait placeholder are listed by `node tools/check.mjs --missing`.
-4. **Photos.** See `IMAGE-PROMPTS.md`. This build's environment blocked the Higgsfield image host. To add the photos, allow `d8j0ntlcm91z4.cloudfront.net` in the environment's network settings, or download them on any computer.
+4. **Photos.** 28 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
 5. **Security.** The onboarding form contained a domain login in plain text. It is not stored anywhere in this repo. The client should change that password.
 
 `site.json` `domain` is already set to `www.infiniteaccountingservices.com`, so every canonical, Open Graph and sitemap address uses it. Preview deployments on `*.vercel.app` are kept out of Google by the noindex header in `vercel.json`.
