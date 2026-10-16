@@ -535,3 +535,20 @@ strong { font-weight: 650; }
   .hero-bg::after { background: linear-gradient(90deg, rgba(11, 47, 87, 0.9) 0%, rgba(11, 47, 87, 0.72) 42%, rgba(11, 47, 87, 0.12) 64%, rgba(11, 47, 87, 0) 80%); }
   .hero--bg .wrap > * { max-width: 600px; }
 }
+
+/* CRM form and chat widget. The form sizes itself with its own script; the minimum height keeps
+   its space reserved before that script runs and when scripts are off. The CRM chat button is
+   58px, 20px in from the bottom right corner, so the call and contact buttons match it. */
+.form-wrap--embed iframe { display: block; min-height: 540px; }
+.form-wrap--embed .form-note { margin-top: 16px; }
+.form-embed { scroll-margin-top: calc(var(--header-h) + 16px); }
+/* The CRM form has its own white background and padding, so on a phone the card around it stays thin
+   and the whole form fits between the header and the phone buttons. */
+@media (max-width: 639px) { .form-wrap--embed { padding: 6px 6px 16px; } .form-wrap--embed .form-note { padding: 0 14px; } }
+@media (max-width: 899px) {
+  .round-btn { bottom: calc(20px + env(safe-area-inset-bottom)); }
+  .round-btn--call { left: 20px; }
+  .menu-panel { padding-bottom: 240px; }
+}
+/* While the phone menu is open it covers the page, so the chat button and its message bubble step aside. */
+.menu-open chat-widget { display: none !important; }

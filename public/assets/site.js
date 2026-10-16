@@ -84,6 +84,24 @@
     if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, reduceMotion ? 0 : 600);
   });
 
+  /* CRM chat widget. While its greeting bubble shows, the widget's invisible box stretches from the
+     bubble down to the bottom corner and would block taps on the Contact us button beside it. Let
+     taps pass through that empty part; the chat button and the bubble stay tappable. The embed
+     code itself is untouched. */
+  var chatTries = 0;
+  var chatFix = setInterval(function () {
+    var cw = document.querySelector("chat-widget");
+    var root = cw && cw.shadowRoot;
+    var box = root && root.getElementById("lc_text-widget");
+    if (box && !root.getElementById("site-chat-hit-area")) {
+      var st = document.createElement("style");
+      st.id = "site-chat-hit-area";
+      st.textContent = "#lc_text-widget{pointer-events:none}#lc_text-widget>*{pointer-events:auto}";
+      root.appendChild(st);
+    }
+    if (box || ++chatTries > 60) clearInterval(chatFix);
+  }, 500);
+
   /* Built-in chat panel. It sends nothing anywhere: it offers call, text and the form. */
   var chatBtn = document.querySelector(".chat-launcher");
   var chatPanel = document.getElementById("chat-panel");
@@ -138,8 +156,8 @@
     });
   }
 
-  /* Built-in contact form. */
-  var form = document.getElementById("contact-form");
+  /* Built-in contact form (not used once the CRM form embed is on the page). */
+  var form = document.querySelector("form#contact-form");
   if (form) {
     form.noValidate = true; /* our own messages replace the browser's */
     var status = form.querySelector(".form-status");
