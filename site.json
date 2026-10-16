@@ -52,11 +52,29 @@
   "brand": {
     "colour_main": "#0B2F57",
     "colour_accent": "#1E8449",
-    "colours_other": ["#1D5FA8", "#E8F5EC", "#F4F8FB", "#082340"],
+    "colours_other": [
+      "#1D5FA8",
+      "#E8F5EC",
+      "#F4F8FB",
+      "#082340"
+    ],
     "font": "League Spartan (headings, as on the current site) and Inter (body)",
-    "notes": "Blue and Green. Logo supplied as JPEG only; no file received yet."
+    "notes": "Blue and Green. Logo received as a small image (297 by 150 pixels); a larger copy is requested in VERIFY.md."
   },
-  "images": [],
+  "images": [
+    {
+      "file": "images/logo-primary.png",
+      "note": "Client logo: blue ribbon infinity mark above INFINITE in black and ACCOUNTING SERVICES, INC. in blue, white background removed. Header and share image. Source is small (297 by 150 pixels); a larger copy is requested in VERIFY.md."
+    },
+    {
+      "file": "images/logo-reversed.png",
+      "note": "Client logo with the lettering turned white, made by us from the logo above for the navy footer. Ask the client if they have an official version for dark backgrounds."
+    },
+    {
+      "file": "images/logo-icon.png",
+      "note": "Ribbon infinity symbol cut from the client logo. Favicon and phone home-screen icon."
+    }
+  ],
   "must_keep": "",
   "integrations": {
     "form_embed": "",

@@ -8,7 +8,7 @@ One security note first. The onboarding form included the login and password for
 
 ## Part A. Things we still need from you
 
-1. **Your logo.** We received "JPEG only" and no file. Please send your logo as a PNG with a transparent background, or as an SVG. If you have an icon-only version (just the symbol), send that too. Until then, the site uses a simple temporary wordmark.
+1. **A larger copy of your logo.** Thank you, your logo is on the site now. The copy we have is small (297 by 150 pixels), so it looks a little soft on large screens and when the site is shared on Facebook. If you have a bigger version or the original design file (PNG, SVG, PDF or AI), please send it. For the dark footer we made a version with white lettering. If you already have an official version for dark backgrounds, please send that too.
 2. **A photo of you.** A portrait for the About page and the home page, ideally in your Orland Park office. A recent phone photo in good light works. The site currently shows your initials in that spot.
 3. **Any other real photos.** For example, your office front, reception or desk. You mentioned you have fewer than 15. Please send the ones you are happy to show.
 4. **Your prices.** The Pricing page and the service pages have a "From $" line for each service. Please give a starting price for each one, or tell us you prefer "quoted after a free consultation" with no number:

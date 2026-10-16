@@ -53,5 +53,5 @@ All photos below were already generated with Higgsfield (GPT Image 2.5, extra-hi
 Still needed from the client (no AI stand-in allowed):
 
 - A real portrait of Danielle Douglas, 4 by 5 crop, for the About and home pages.
-- The logo as a transparent PNG or SVG, plus an icon-only version.
+- A larger copy of the logo (the one on the site is 297 by 150 pixels), ideally the original design file.
 - Any real photos of the office.

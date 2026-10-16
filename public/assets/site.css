@@ -134,8 +134,8 @@ strong { font-weight: 650; }
 ::selection { background: var(--tint); color: var(--navy); }
 [hidden] { display: none !important; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-.skip-link { position: absolute; left: 16px; top: -60px; z-index: 100; background: var(--white); color: var(--navy); padding: 10px 16px; border-radius: var(--radius); box-shadow: var(--shadow); font-weight: 600; }
-.skip-link:focus { top: 12px; }
+.skip-link { position: absolute; left: 16px; top: -60px; z-index: 100; background: var(--white); color: var(--navy); padding: 10px 16px; border-radius: var(--radius); box-shadow: none; font-weight: 600; }
+.skip-link:focus { top: 12px; box-shadow: var(--shadow); }
 .icon { width: 1.25em; height: 1.25em; flex: none; stroke: currentColor; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---------- layout ---------- */
@@ -495,3 +495,28 @@ strong { font-weight: 650; }
 @media print {
   .site-header, .mobile-bar, .chat-launcher, .chat-panel, .cta-final, .contact-section { display: none !important; }
 }
+
+/* ---------- photos (AI-generated with Higgsfield, approved by the client before launch) ---------- */
+/* The client's logo is stacked (symbol over lettering), so it needs most of the header's height. */
+.brand-logo { height: 52px; width: auto; }
+@media (min-width: 1024px) { .brand-logo { height: 62px; } }
+.site-footer .brand-logo { height: 84px; }
+.brand-icon { height: 34px; width: auto; }
+/* Split hero: text on the left, photo on the right on wide screens; on phones the photo
+   follows the buttons and the answer, so call and contact stay above the fold. */
+.hero-media { border-radius: var(--radius); overflow: hidden; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28); }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; }
+@media (max-width: 1023px) {
+  .hero--split .wrap { display: flex; flex-direction: column; }
+  .hero--split .hero-media { order: 5; margin-top: 32px; }
+  .hero--split .hero-media img { aspect-ratio: 16 / 9; }
+}
+@media (min-width: 1024px) {
+  .hero--split .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: 64px; align-items: center; }
+  .hero--split .wrap > * { grid-column: 1; }
+  .hero--split .hero-media { grid-column: 2; grid-row: 1 / span 8; align-self: center; }
+}
+.photo-card { margin: calc(var(--card-pad) * -1) calc(var(--card-pad) * -1) 24px; border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; }
+.photo-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.photo-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
