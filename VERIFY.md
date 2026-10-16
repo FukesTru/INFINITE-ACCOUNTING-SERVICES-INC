@@ -78,6 +78,6 @@ One security note first. The onboarding form included the login and password for
 
 ### Photos made with AI
 
-- We made photos for the site with Higgsfield, an AI image tool: desks, documents and local street scenes. 28 of them are on the preview site now. None of them shows a person's face, and none is presented as your office or your team. Please look through them and tell us whether to keep them or which ones to swap. If you would rather use only your own photos, we will take them out.
+- We made photos for the site with Higgsfield, an AI image tool: desks, documents and local street scenes. 27 of them are on the preview site now. None of them shows a person's face, and none is presented as your office or your team. Please look through them and tell us whether to keep them or which ones to swap. If you would rather use only your own photos, we will take them out.
 
 Thank you. Once we have your answers, we will update the site and send you a new link to review.

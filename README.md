@@ -27,16 +27,20 @@ The website for **Infinite Accounting Services Inc**, a bookkeeping and tax firm
 
 Every page has its own title, description and canonical. Each also has Open Graph tags, the business structured data, a contact form, a text link, and a closing call to action. Pages with FAQs carry FAQ structured data.
 
+## Speed and SEO scores
+
+Tested with Lighthouse (the engine behind PageSpeed Insights) on every page, phone and desktop settings. Run PageSpeed Insights on the client's own domain after go-live, not on a `*.vercel.app` address: those addresses are deliberately marked noindex, which lowers the SEO score there. `vercel.json` sets long browser caching for `/assets/` (the stylesheet and script are versioned by content, so changes still show at once) and for `/images/`, plus security headers (HSTS, Content-Security-Policy, Permissions-Policy, X-Frame-Options, nosniff, Referrer-Policy).
+
 ## Before go-live (agency)
 
 1. **The CRM pieces** (`site.json` `integrations`). All three are set and used exactly as given.
-   - **Form embed.** The website form (LeadConnector) is the contact form on every page. `site.js` keeps a built-in form only as a fallback if the embed is ever removed.
-   - **Chat widget.** Loads once per page, in the footer. On a phone its button sits in the bottom right corner, level with the call and contact buttons. `site.js` lets taps pass through the empty part of the widget's greeting bubble so it never blocks the Contact us button, and the widget hides while the phone menu is open.
+   - **Form embed.** The website form (LeadConnector) is the contact form on every page. Its code sits in a `<template>` exactly as given, and `site.js` switches it on when it comes near the screen, or straight away when someone presses Contact us. On the contact page a short "Loading the form" note holds its place for that moment.
+   - **Chat widget.** Once per page, in the footer, also in a `<template>` exactly as given. `site.js` switches it on at the visitor's first scroll, tap, key press or mouse move, or 3.5 seconds after the page loads. Loading the CRM pieces this way keeps PageSpeed scores high and sets no third-party cookies before a visitor does anything. On a phone the chat button sits in the bottom right corner, level with the call and contact buttons; `site.js` lets taps pass through the empty part of its greeting bubble so it never blocks the Contact us button, and the widget hides while the phone menu is open.
    - **Review link.** Every "Leave us a review" button goes to https://review.strain-systems.com/infinite-accounting.
    - **To change in the CRM (not in this repo):** the chat widget colour (it is dark red; the site's blue is `#1D5FA8`), the form's black "Send text" button (the site's green is `#1E8449`), a text message consent line on the website form like the one the chat already has, and the form's sample phone number (808) to (708).
 2. **Vercel.** Import this repo as a new Vercel project. Then fill in `vercel_project` and `preview_url` in `site.json`.
 3. **The client's answers** in `VERIFY.md`. Every [VERIFY] on the site and the portrait placeholder are listed by `node tools/check.mjs --missing`.
-4. **Photos.** 28 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
+4. **Photos.** 27 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
 5. **Security.** The onboarding form contained a domain login in plain text. It is not stored anywhere in this repo. The client should change that password.
 
 `site.json` `domain` is already set to `www.infiniteaccountingservices.com`, so every canonical, Open Graph and sitemap address uses it. Preview deployments on `*.vercel.app` are kept out of Google by the noindex header in `vercel.json`.

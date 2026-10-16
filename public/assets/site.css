@@ -540,6 +540,8 @@ strong { font-weight: 650; }
    its space reserved before that script runs and when scripts are off. The CRM chat button is
    58px, 20px in from the bottom right corner, so the call and contact buttons match it. */
 .form-wrap--embed iframe { display: block; min-height: 540px; }
+.form-embed { min-height: 569px; }
+.form-loading { margin: 0; padding: 48px 24px; text-align: center; color: var(--muted); font-size: 15px; }
 .form-wrap--embed .form-note { margin-top: 16px; }
 .form-embed { scroll-margin-top: calc(var(--header-h) + 16px); }
 /* The CRM form has its own white background and padding, so on a phone the card around it stays thin
@@ -552,3 +554,49 @@ strong { font-weight: 650; }
 }
 /* While the phone menu is open it covers the page, so the chat button and its message bubble step aside. */
 .menu-open chat-widget { display: none !important; }
+
+/* Contact page: headline, short answer and the form in the first band. */
+.contact-top { padding: 36px 0 48px; }
+.contact-top h1 { color: var(--white); margin-top: 10px; }
+.contact-top .answer { color: var(--on-dark-muted); font-size: 17px; margin-top: 16px; }
+.contact-top .answer strong { color: var(--white); font-weight: 600; }
+.contact-top .split > * + * { margin-top: 24px; }
+.contact-top .form-wrap { border: 0; box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28); }
+@media (min-width: 1024px) {
+  .contact-top { padding: 80px 0 88px; }
+  .contact-top .split { align-items: center; }
+  .contact-top .split > * + * { margin-top: 0; }
+  .contact-top .answer { font-size: var(--lead); }
+}
+
+/* ---------- opening animation and page transitions ----------
+   First page of a visit: the header drops in, the hero text rises into place line by line and the
+   home photo settles from a slight zoom. Short delays keep the main text quick to appear (it is what
+   speed tests time). Moving between pages: a soft cross-fade with the header held still, in browsers
+   that support it. Nothing moves for visitors who ask their device to reduce motion. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.35s; animation-timing-function: var(--ease); }
+  .site-header { view-transition-name: site-header; }
+
+  .intro .site-header { animation: intro-drop 0.7s var(--ease) both; }
+  /* The headline, paragraph, photo and form are what speed tests time, so they slide without fading:
+     a fade from invisible makes Chrome count them late. The smaller pieces fade as they rise. */
+  .intro :is(.hero, .contact-top) :is(.eyebrow, .btn-pair, .hero-proof, .hero-meta) { animation: intro-rise 0.8s var(--ease) both; }
+  .intro :is(.hero, .contact-top) :is(h1, .answer, .hero-media, .form-wrap) { animation: intro-lift 0.9s var(--ease) both; }
+  .intro :is(.hero, .contact-top) .eyebrow { animation-delay: 0.05s; }
+  .intro :is(.hero, .contact-top) h1 { animation-delay: 0.1s; }
+  .intro :is(.hero, .contact-top) :is(.answer, .hero-media, .form-wrap) { animation-delay: 0.18s; }
+  .intro :is(.hero, .contact-top) :is(.btn-pair, .hero-meta) { animation-delay: 0.26s; }
+  .intro :is(.hero, .contact-top) .hero-proof { animation-delay: 0.34s; }
+  .intro .hero-bg img { animation: intro-settle 1.8s var(--ease) both; }
+}
+/* On phones and tablets the buttons sit above the paragraph, so they arrive first. */
+@media (prefers-reduced-motion: no-preference) and (max-width: 1023px) {
+  .intro .hero .btn-pair { animation-delay: 0.18s; }
+  .intro .hero .answer { animation-delay: 0.26s; }
+}
+@keyframes intro-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes intro-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes intro-lift { from { transform: translateY(26px); } to { transform: none; } }
+@keyframes intro-settle { from { transform: scale(1.08); } to { transform: none; } }

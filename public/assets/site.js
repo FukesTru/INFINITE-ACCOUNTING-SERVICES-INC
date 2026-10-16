@@ -84,6 +84,43 @@
     if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, reduceMotion ? 0 : 600);
   });
 
+  /* CRM form and chat widget. Their code sits in <template> tags exactly as given and is switched on
+     when it is needed, so pages load fast and no third-party cookies are set before a visitor does
+     anything (Lighthouse's "facade" advice for chat widgets and embeds). The chat starts at the first
+     scroll, tap, key press or mouse move, or a few seconds after the page loads. The form starts when
+     it comes near the screen once the chat gate is open, or straight away when someone heads for it. */
+  var crmReady = false;
+  var crmForms = [];
+  function crmActivate(t) {
+    if (!t || t.getAttribute("data-on")) return;
+    t.setAttribute("data-on", "1");
+    t.parentNode.insertBefore(document.importNode(t.content, true), t);
+    var note = t.parentNode.querySelector(".form-loading");
+    if (note) note.remove();
+  }
+  function crmNear(t) {
+    var r = t.parentNode.getBoundingClientRect();
+    return r.top < window.innerHeight + 800 && r.bottom > -800;
+  }
+  function crmCheckForms() { crmForms.forEach(function (t) { if (crmReady && crmNear(t)) crmActivate(t); }); }
+  function crmOpen() {
+    if (crmReady) return;
+    crmReady = true;
+    crmActivate(document.querySelector('template[data-crm="chat"]'));
+    crmCheckForms();
+    ["scroll", "pointerdown", "keydown", "touchstart", "mousemove"].forEach(function (ev) { window.removeEventListener(ev, crmOpen, { passive: true }); });
+  }
+  crmForms = Array.prototype.slice.call(document.querySelectorAll('template[data-crm="form"]'));
+  if (crmForms.length || document.querySelector('template[data-crm="chat"]')) {
+    ["scroll", "pointerdown", "keydown", "touchstart", "mousemove"].forEach(function (ev) { window.addEventListener(ev, crmOpen, { passive: true }); });
+    window.addEventListener("load", function () { setTimeout(crmOpen, 3500); });
+    window.addEventListener("scroll", crmCheckForms, { passive: true });
+    /* Anyone heading for the form gets it at once. */
+    document.addEventListener("click", function (e) {
+      if (e.target.closest && e.target.closest('a[href="#contact"]')) { crmOpen(); crmForms.forEach(crmActivate); }
+    }, true);
+  }
+
   /* CRM chat widget. While its greeting bubble shows, the widget's invisible box stretches from the
      bubble down to the bottom corner and would block taps on the Contact us button beside it. Let
      taps pass through that empty part; the chat button and the bubble stay tappable. The embed
