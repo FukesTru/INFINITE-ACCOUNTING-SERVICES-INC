@@ -191,7 +191,7 @@
   "integrations": {
     "form_embed": "",
     "chat_widget": "",
-    "review_link": ""
+    "review_link": "https://review.strain-systems.com/infinite-accounting"
   },
   "crm_location_id": "",
   "vercel_project": "",

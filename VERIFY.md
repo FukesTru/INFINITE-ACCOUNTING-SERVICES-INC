@@ -20,7 +20,7 @@ One security note first. The onboarding form included the login and password for
    - Help with an IRS or Illinois notice
 5. **How clients pay.** Which payment methods you accept, such as check, card or bank transfer.
 6. **Your credentials and registrations.** Any you would like listed, such as your PTIN (tax preparer number) or other registrations. We have not called you a CPA or an Enrolled Agent anywhere and will not unless you confirm it.
-7. **Google Business Profile.** The form said "Not sure". We need your profile link and your "write a review" link, so the "Leave us a review" buttons go to Google. They point to your Facebook page for now.
+7. **Google Business Profile.** The form said "Not sure". Please send your profile link so the site can link to it and show your reviews. The "Leave us a review" buttons already go to your review page.
 8. **Real reviews.** Once the Google profile is confirmed, we will copy real reviews word for word with each reviewer's name as they posted it. We have not written any reviews.
 9. **How long a first consultation takes.** For example, 30 minutes.
 

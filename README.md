@@ -29,10 +29,10 @@ Every page has its own title, description and canonical. Each also has Open Grap
 
 ## Before go-live (agency)
 
-1. **The three CRM pieces** are not set yet (`site.json` `integrations`).
+1. **The CRM pieces** (`site.json` `integrations`). The review link is set; the form embed and chat widget are not yet.
    - **Form embed.** Until it is set, every page uses a built-in form. That form opens an email to Danielle, or posts to `LEAD_ENDPOINT` in `site.js` if one is set. When the embed arrives, it replaces the built-in form on every page.
    - **Chat widget.** A simple built-in chat panel (call, text, send a message) holds its place. It sends nothing anywhere.
-   - **Review link.** "Leave us a review" points to the Facebook page until it is set.
+   - **Review link.** Set. Every "Leave us a review" button goes to https://review.strain-systems.com/infinite-accounting.
 2. **Vercel.** Import this repo as a new Vercel project. Then fill in `vercel_project` and `preview_url` in `site.json`.
 3. **The client's answers** in `VERIFY.md`. Every [VERIFY] on the site and the portrait placeholder are listed by `node tools/check.mjs --missing`.
 4. **Photos.** 28 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
