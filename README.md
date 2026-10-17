@@ -29,7 +29,7 @@ Every page has its own title, description and canonical. Each also has Open Grap
 
 ## Opening animation
 
-On the first page of a visit, a navy curtain with the logo eases in and lifts away (about 1.4 seconds), then the header and hero text settle into place. Between pages there is a soft cross-fade where the browser supports it. Visitors who ask their device for reduced motion, and browsers without scripts, see none of it. The rules are at the end of `public/assets/site.css` (search for "opening animation"); the curtain markup is the first thing inside `<body>` on every page.
+Every time the home page opens (first visit, reload or coming back to it), and on the first page of a visit when someone lands elsewhere, a navy curtain with the logo eases in and lifts away (about 1.4 seconds), then the header and hero text settle into place. Between pages there is a soft cross-fade where the browser supports it. Visitors who ask their device for reduced motion, and browsers without scripts, see none of it. The rules are at the end of `public/assets/site.css` (search for "opening animation"); the curtain markup is the first thing inside `<body>` on every page.
 
 ## Speed and SEO scores
 
