@@ -616,3 +616,16 @@ strong { font-weight: 650; }
 @keyframes intro-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
 @keyframes intro-lift { from { transform: translateY(26px); } to { transform: none; } }
 @keyframes intro-settle { from { transform: scale(1.08); } to { transform: none; } }
+
+/* Review cards: real Google reviews, word for word. */
+.review-card { margin: 0; gap: 16px; }
+.review-card .stars { display: flex; gap: 2px; color: #c98a00; }
+.review-card .stars .icon { width: 20px; height: 20px; fill: currentColor; }
+.review-card blockquote { margin: 0; flex: 1 1 auto; }
+.review-card blockquote p { font-size: 17px; line-height: 1.6; color: var(--ink); }
+.review-card figcaption { display: flex; flex-direction: column; gap: 2px; padding-top: 16px; border-top: var(--border); }
+.review-name { font-weight: 700; color: var(--navy); }
+.review-meta { font-size: var(--small); color: var(--muted); }
+.review-card--ask { background: var(--tint); border-color: transparent; box-shadow: none; }
+.review-card--ask .chip { background: var(--white); margin-bottom: 4px; }
+.link-row { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 32px; }

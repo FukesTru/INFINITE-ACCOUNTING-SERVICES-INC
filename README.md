@@ -44,7 +44,8 @@ Tested with Lighthouse (the engine behind PageSpeed Insights) on every page, pho
    - **To change in the CRM (not in this repo):** the chat widget colour (it is dark red; the site's blue is `#1D5FA8`), the form's black "Send text" button (the site's green is `#1E8449`), a text message consent line on the website form like the one the chat already has, and the form's sample phone number (808) to (708).
 2. **Vercel.** Import this repo as a new Vercel project. Then fill in `vercel_project` and `preview_url` in `site.json`.
 3. **The client's answers** in `VERIFY.md`. Every [VERIFY] on the site and the portrait placeholder are listed by `node tools/check.mjs --missing`.
-4. **Photos.** 27 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
-5. **Security.** The onboarding form contained a domain login in plain text. It is not stored anywhere in this repo. The client should change that password.
+4. **Reviews.** The Google reviews in `site.json` `reviews` were copied word for word from the client's Google Business Profile on 2026-10-17 (7 reviews, all 5 stars; 5 with written text are shown). Refresh them before go-live and whenever new ones arrive, then rebuild.
+5. **Photos.** 27 of the Higgsfield photos are on the site, listed with their places in `IMAGE-PROMPTS.md`. The client still has to approve them (`VERIFY.md`).
+6. **Security.** The onboarding form contained a domain login in plain text. It is not stored anywhere in this repo. The client should change that password.
 
 `site.json` `domain` is already set to `www.infiniteaccountingservices.com`, so every canonical, Open Graph and sitemap address uses it. Preview deployments on `*.vercel.app` are kept out of Google by the noindex header in `vercel.json`.

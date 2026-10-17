@@ -20,8 +20,8 @@ One security note first. The onboarding form included the login and password for
    - Help with an IRS or Illinois notice
 5. **How clients pay.** Which payment methods you accept, such as check, card or bank transfer.
 6. **Your credentials and registrations.** Any you would like listed, such as your PTIN (tax preparer number) or other registrations. We have not called you a CPA or an Enrolled Agent anywhere and will not unless you confirm it.
-7. **Google Business Profile.** The form said "Not sure". Please send your profile link so the site can link to it and show your reviews. The "Leave us a review" buttons already go to your review page.
-8. **Real reviews.** Once the Google profile is confirmed, we will copy real reviews word for word with each reviewer's name as they posted it. We have not written any reviews.
+7. **Your Google Business Profile address.** Your Google profile still shows your old address, 6500 W College Dr, 2nd Floor, Palos Heights. If you have moved to John Humphrey Dr, please update it in your Google profile, because Google compares it with your website.
+8. **Your Google reviews.** Your 7 Google reviews (all 5 stars) are now on the Reviews page and the home page, copied word for word with each name as the client posted it. Please tell us if any client would rather not be quoted.
 9. **How long a first consultation takes.** For example, 30 minutes.
 
 ## Part B. Facts please confirm or correct
@@ -29,7 +29,7 @@ One security note first. The onboarding form included the login and password for
 ### Every page (contact details)
 
 - **Business name.** Infinite Accounting Services, legal name Infinite Accounting Services Inc. Your form wrote the legal name in capitals; we show it in normal capitals.
-- **Address.** 14475 John Humphrey Dr, Ste 150, Orland Park, IL 60462. Your old website, Yelp, BBB and MapQuest still show 6500 W College Dr, Palos Heights, IL 60463. Please confirm the new address. Once confirmed, those listings should be updated to match.
+- **Address.** 14475 John Humphrey Dr, Ste 150, Orland Park, IL 60462. Your old website, your Google profile, Yelp, BBB and MapQuest still show 6500 W College Dr, Palos Heights, IL 60463. Please confirm the new address. Once confirmed, those listings should be updated to match.
 - **Phone.** (708) 232-3003, and that it accepts text messages.
 - **Email.** danielle@infiniteaccountingservices.com. Your Facebook page shows info@infiniteaccountingservices.com. Which should the website use?
 - **Office hours.** Monday, Tuesday, Thursday and Friday 8 am to 3 pm, Wednesday by appointment, weekends closed. These came from your current website, but MapQuest shows 9 am to 2 pm with Wednesday closed. Which is right?

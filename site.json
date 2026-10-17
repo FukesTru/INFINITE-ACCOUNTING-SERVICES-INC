@@ -21,7 +21,7 @@
   "online": {
     "facebook": "https://www.facebook.com/AccountingPlans4U/",
     "instagram": "https://www.instagram.com/infiniteaccounting/",
-    "google_business_profile": "",
+    "google_business_profile": "https://www.google.com/maps/search/?api=1&query=Infinite%20Accounting%20Services&query_place_id=ChIJXeUzGc8ZDogR_gWHfIU-yYE",
     "google_review_link": ""
   },
   "hours": {
@@ -192,5 +192,56 @@
   "crm_location_id": "",
   "vercel_project": "",
   "preview_url": "",
-  "domain": "www.infiniteaccountingservices.com"
+  "domain": "www.infiniteaccountingservices.com",
+  "reviews": {
+    "source": "Google Business Profile (place ID ChIJXeUzGc8ZDogR_gWHfIU-yYE)",
+    "fetched": "2026-10-17",
+    "rating": 5,
+    "count": 7,
+    "note": "Copied word for word with each name as posted. Only reviews with written text are shown; two clients left 5 stars without text. Refresh from Google before go-live and whenever new reviews arrive.",
+    "items": [
+      {
+        "author": "Ravi Sharma",
+        "rating": 5,
+        "date": "2024-08-21",
+        "text": "Danielle laid out a clear scope and was very professional throughout the engagement. She went above and beyond. I will be sure to consider for any future help. Highly recommended!"
+      },
+      {
+        "author": "Rhonda",
+        "rating": 5,
+        "date": "2022-07-07",
+        "text": "I have worked with Infinite Accounting Services for the last 2 years. Danielle is very through and keeps me informed.  She is always knowledgeable regarding my financial questions. I highly recommend Infinite Accounting Services not only for your taxes but for your entire financial purposes.  Danielle offers bookkeeping services for businesses too."
+      },
+      {
+        "author": "Naomi Elsner",
+        "rating": 5,
+        "date": "2021-04-22",
+        "text": "I was fortunate to find Danielle to do my 2019 taxes last year. I trusted her to do them again for my 2020 taxes this year. She is  knowledgeable, professional, and very thorough. I highly recommend her for anyone's tax preparation needs."
+      },
+      {
+        "author": "she cooks",
+        "rating": 5,
+        "date": "2021-04-22",
+        "text": "Cannot recommend Danielle highly enough- responsive, patient, professional, very reasonably priced and just generally easy to work with. Filing my taxes has never been easier."
+      },
+      {
+        "author": "Seth Gilmore",
+        "rating": 5,
+        "date": "2021-04-22",
+        "text": "I'm always thoroughly satisfied with the prompt and professional services I receive from Infinite Accounting Srvcs!"
+      },
+      {
+        "author": "Wael Abbas",
+        "rating": 5,
+        "date": "2024-01-13",
+        "text": null
+      },
+      {
+        "author": "amber ruffin",
+        "rating": 5,
+        "date": "2021-04-22",
+        "text": null
+      }
+    ]
+  }
 }
