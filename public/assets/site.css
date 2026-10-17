@@ -541,7 +541,9 @@ strong { font-weight: 650; }
    58px, 20px in from the bottom right corner, so the call and contact buttons match it. */
 .form-wrap--embed iframe { display: block; min-height: 540px; }
 .form-embed { min-height: 569px; }
-.form-loading { margin: 0; padding: 48px 24px; text-align: center; color: var(--muted); font-size: 15px; }
+.form-loading { margin: 0; padding: 56px 24px; text-align: center; color: var(--muted); font-size: 15px; }
+.form-loading p { margin: 0 auto; max-width: 32ch; }
+.form-loading .btn { margin-top: 20px; }
 .form-wrap--embed .form-note { margin-top: 16px; }
 .form-embed { scroll-margin-top: calc(var(--header-h) + 16px); }
 /* The CRM form has its own white background and padding, so on a phone the card around it stays thin
@@ -570,32 +572,46 @@ strong { font-weight: 650; }
 }
 
 /* ---------- opening animation and page transitions ----------
-   First page of a visit: the header drops in, the hero text rises into place line by line and the
-   home photo settles from a slight zoom. Short delays keep the main text quick to appear (it is what
-   speed tests time). Moving between pages: a soft cross-fade with the header held still, in browsers
-   that support it. Nothing moves for visitors who ask their device to reduce motion. */
+   First page of a visit: a navy curtain with the logo, which eases in and then lifts away like a
+   curtain. As it lifts, the header drops in, the hero text rises into place
+   line by line and the home photo settles from a slight zoom (about 1.4 seconds for the curtain). The page is drawn underneath from the
+   start, so speed tests still see it straight away; the headline, paragraph, photo and form slide
+   without fading for the same reason. Moving between pages: a soft cross-fade with the header held
+   still, where the browser supports it. Nothing moves for visitors who ask for reduced motion, and
+   without scripts there is no curtain at all. */
+.intro-curtain { display: none; }
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.35s; animation-timing-function: var(--ease); }
   .site-header { view-transition-name: site-header; }
 
-  .intro .site-header { animation: intro-drop 0.7s var(--ease) both; }
+  .intro { --lift: 0.7s; }
+  .intro .intro-curtain {
+    display: grid; place-items: center; position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+    background: radial-gradient(120% 90% at 50% 40%, #12406f 0%, var(--navy) 55%, var(--navy-deep, #082340) 100%);
+    animation: curtain-lift 0.7s cubic-bezier(0.76, 0, 0.24, 1) var(--lift) both;
+  }
+  .intro .intro-curtain img { width: min(260px, 58vw); height: auto; animation: curtain-logo 0.75s var(--ease) 0.05s both; }
+
+  .intro .site-header { animation: intro-drop 0.7s var(--ease) calc(var(--lift) + 0.25s) both; }
+  .intro :is(.hero, .contact-top) :is(.eyebrow, .btn-pair, .hero-proof, .hero-meta) { animation: intro-rise 0.8s var(--ease) both; }
   /* The headline, paragraph, photo and form are what speed tests time, so they slide without fading:
      a fade from invisible makes Chrome count them late. The smaller pieces fade as they rise. */
-  .intro :is(.hero, .contact-top) :is(.eyebrow, .btn-pair, .hero-proof, .hero-meta) { animation: intro-rise 0.8s var(--ease) both; }
   .intro :is(.hero, .contact-top) :is(h1, .answer, .hero-media, .form-wrap) { animation: intro-lift 0.9s var(--ease) both; }
-  .intro :is(.hero, .contact-top) .eyebrow { animation-delay: 0.05s; }
-  .intro :is(.hero, .contact-top) h1 { animation-delay: 0.1s; }
-  .intro :is(.hero, .contact-top) :is(.answer, .hero-media, .form-wrap) { animation-delay: 0.18s; }
-  .intro :is(.hero, .contact-top) :is(.btn-pair, .hero-meta) { animation-delay: 0.26s; }
-  .intro :is(.hero, .contact-top) .hero-proof { animation-delay: 0.34s; }
-  .intro .hero-bg img { animation: intro-settle 1.8s var(--ease) both; }
+  .intro :is(.hero, .contact-top) .eyebrow { animation-delay: calc(var(--lift) + 0.3s); }
+  .intro :is(.hero, .contact-top) h1 { animation-delay: calc(var(--lift) + 0.35s); }
+  .intro :is(.hero, .contact-top) :is(.answer, .hero-media, .form-wrap) { animation-delay: calc(var(--lift) + 0.43s); }
+  .intro :is(.hero, .contact-top) :is(.btn-pair, .hero-meta) { animation-delay: calc(var(--lift) + 0.51s); }
+  .intro :is(.hero, .contact-top) .hero-proof { animation-delay: calc(var(--lift) + 0.59s); }
+  .intro .hero-bg img { animation: intro-settle 2s var(--ease) calc(var(--lift) + 0.1s) both; }
 }
 /* On phones and tablets the buttons sit above the paragraph, so they arrive first. */
 @media (prefers-reduced-motion: no-preference) and (max-width: 1023px) {
-  .intro .hero .btn-pair { animation-delay: 0.18s; }
-  .intro .hero .answer { animation-delay: 0.26s; }
+  .intro .hero .btn-pair { animation-delay: calc(var(--lift) + 0.43s); }
+  .intro .hero .answer { animation-delay: calc(var(--lift) + 0.51s); }
 }
+@keyframes curtain-logo { from { opacity: 0; transform: translateY(12px) scale(0.94); } to { opacity: 1; transform: none; } }
+@keyframes curtain-lift { from { transform: none; } to { transform: translateY(-100%); visibility: hidden; } }
 @keyframes intro-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
 @keyframes intro-rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
 @keyframes intro-lift { from { transform: translateY(26px); } to { transform: none; } }

@@ -87,7 +87,7 @@
   /* CRM form and chat widget. Their code sits in <template> tags exactly as given and is switched on
      when it is needed, so pages load fast and no third-party cookies are set before a visitor does
      anything (Lighthouse's "facade" advice for chat widgets and embeds). The chat starts at the first
-     scroll, tap, key press or mouse move, or a few seconds after the page loads. The form starts when
+     scroll, tap, key press or mouse move, or 10 seconds after the page loads. The form starts when
      it comes near the screen once the chat gate is open, or straight away when someone heads for it. */
   var crmReady = false;
   var crmForms = [];
@@ -95,7 +95,7 @@
     if (!t || t.getAttribute("data-on")) return;
     t.setAttribute("data-on", "1");
     t.parentNode.insertBefore(document.importNode(t.content, true), t);
-    var note = t.parentNode.querySelector(".form-loading");
+    var note = t.parentNode.querySelector("div.form-loading");
     if (note) note.remove();
   }
   function crmNear(t) {
@@ -113,8 +113,15 @@
   crmForms = Array.prototype.slice.call(document.querySelectorAll('template[data-crm="form"]'));
   if (crmForms.length || document.querySelector('template[data-crm="chat"]')) {
     ["scroll", "pointerdown", "keydown", "touchstart", "mousemove"].forEach(function (ev) { window.addEventListener(ev, crmOpen, { passive: true }); });
-    window.addEventListener("load", function () { setTimeout(crmOpen, 3500); });
+    window.addEventListener("load", function () { setTimeout(crmOpen, 10000); });
     window.addEventListener("scroll", crmCheckForms, { passive: true });
+    /* The placeholder's button opens the form at once (for anyone who has not scrolled or tapped yet). */
+    document.querySelectorAll(".form-open").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var t = btn.closest(".form-embed").querySelector('template[data-crm="form"]');
+        crmOpen(); crmActivate(t);
+      });
+    });
     /* Anyone heading for the form gets it at once. */
     document.addEventListener("click", function (e) {
       if (e.target.closest && e.target.closest('a[href="#contact"]')) { crmOpen(); crmForms.forEach(crmActivate); }
