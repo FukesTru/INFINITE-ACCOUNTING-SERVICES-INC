@@ -25,11 +25,11 @@
     "google_review_link": ""
   },
   "hours": {
-    "monday": "8 am to 3 pm",
-    "tuesday": "8 am to 3 pm",
+    "monday": "9 am to 3 pm",
+    "tuesday": "9 am to 3 pm",
     "wednesday": "By appointment",
-    "thursday": "8 am to 3 pm",
-    "friday": "8 am to 3 pm",
+    "thursday": "9 am to 3 pm",
+    "friday": "9 am to 3 pm",
     "saturday": "Closed",
     "sunday": "Closed",
     "source": "Current website. MapQuest lists 9 am to 2 pm with Wednesday closed. Client to confirm (VERIFY.md)."
@@ -73,6 +73,10 @@
     {
       "file": "images/logo-icon.png",
       "note": "Ribbon infinity symbol cut from the client logo. Favicon and phone home-screen icon."
+    },
+    {
+      "file": "images/photo-danielle-douglas-1200.webp",
+      "note": "Client photo: studio portrait of Danielle Douglas in a black blazer on a grey background, sent by the client on 2026-10-20. About page and home page owner sections."
     },
     {
       "file": "images/ai-desk-against-navy-wall-2000.webp",

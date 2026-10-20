@@ -2,27 +2,18 @@
 
 Hi Danielle,
 
-Your new website is built. Before it goes live, we need a few things from you and a few facts checked. Wherever something is missing, the preview site shows the word [VERIFY] or a labelled space for a photo. Please reply with your answers and attach any photos or files. Short answers are fine.
+Your new website is built. Before it goes live, we need a few things from you and a few facts checked. Wherever something is missing, the preview site shows the word [VERIFY]. Please reply with your answers and attach any photos or files. Short answers are fine.
 
 One security note first. The onboarding form included the login and password for your domain account. We did not copy them anywhere. Please change that password now, and in future share access by inviting us as a user instead of sending a password.
 
 ## Part A. Things we still need from you
 
 1. **A logo for dark backgrounds (optional).** Thank you for the larger logo. For the dark footer we made a version with white lettering. If you already have an official version for dark backgrounds, please send it too.
-2. **A photo of you.** A portrait for the About page and the home page, ideally in your Orland Park office. A recent phone photo in good light works. The site currently shows your initials in that spot.
-3. **Any other real photos.** For example, your office front, reception or desk. You mentioned you have fewer than 15. Please send the ones you are happy to show.
-4. **Your prices.** The Pricing page and the service pages have a "From $" line for each service. Please give a starting price for each one, or tell us you prefer "quoted after a free consultation" with no number:
-   - Monthly bookkeeping (per month)
-   - Catch-up bookkeeping (per project)
-   - QuickBooks setup or clean-up (per project)
-   - Individual tax return
-   - Business tax return
-   - Help with an IRS or Illinois notice
-5. **How clients pay.** Which payment methods you accept, such as check, card or bank transfer.
-6. **Your credentials and registrations.** Any you would like listed, such as your PTIN (tax preparer number) or other registrations. We have not called you a CPA or an Enrolled Agent anywhere and will not unless you confirm it.
-7. **Your Google Business Profile address.** Your Google profile still shows your old address, 6500 W College Dr, 2nd Floor, Palos Heights. If you have moved to John Humphrey Dr, please update it in your Google profile, because Google compares it with your website.
-8. **Your Google reviews.** Your 7 Google reviews (all 5 stars) are now on the Reviews page and the home page, copied word for word with each name as the client posted it. Please tell us if any client would rather not be quoted.
-9. **How long a first consultation takes.** For example, 30 minutes.
+2. **Any other real photos.** For example, your office front, reception or desk. You mentioned you have fewer than 15. Please send the ones you are happy to show.
+3. **Your credentials and registrations.** Any you would like listed, such as your PTIN (tax preparer number) or other registrations. We have not called you a CPA or an Enrolled Agent anywhere and will not unless you confirm it.
+4. **Your Google Business Profile address.** Your Google profile still shows your old address, 6500 W College Dr, 2nd Floor, Palos Heights. If you have moved to John Humphrey Dr, please update it in your Google profile, because Google compares it with your website.
+5. **Your Google reviews.** Your 7 Google reviews (all 5 stars) are now on the Reviews page and the home page, copied word for word with each name as the client posted it. Please tell us if any client would rather not be quoted.
+6. **How long a first consultation takes.** For example, 30 minutes.
 
 ## Part B. Facts please confirm or correct
 
@@ -32,7 +23,6 @@ One security note first. The onboarding form included the login and password for
 - **Address.** 14475 John Humphrey Dr, Ste 150, Orland Park, IL 60462. Your old website, your Google profile, Yelp, BBB and MapQuest still show 6500 W College Dr, Palos Heights, IL 60463. Please confirm the new address. Once confirmed, those listings should be updated to match.
 - **Phone.** (708) 232-3003, and that it accepts text messages.
 - **Email.** danielle@infiniteaccountingservices.com. Your Facebook page shows info@infiniteaccountingservices.com. Which should the website use?
-- **Office hours.** Monday, Tuesday, Thursday and Friday 8 am to 3 pm, Wednesday by appointment, weekends closed. These came from your current website, but MapQuest shows 9 am to 2 pm with Wednesday closed. Which is right?
 
 ### Home page
 
