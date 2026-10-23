@@ -2,7 +2,7 @@
 
 Hi Danielle,
 
-Your new website is built. Before it goes live, we need a few things from you and a few facts checked. Wherever something is missing, the preview site shows the word [VERIFY]. Please reply with your answers and attach any photos or files. Short answers are fine.
+Your new website is built. Before it goes live, we need a few things from you and a few facts checked. The facts below already appear on the preview site as written, so please read each one carefully and tell us if anything is wrong. Please reply with your answers and attach any photos or files. Short answers are fine.
 
 One security note first. The onboarding form included the login and password for your domain account. We did not copy them anywhere. Please change that password now, and in future share access by inviting us as a user instead of sending a password.
 
