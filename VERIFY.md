@@ -58,6 +58,11 @@ One security note first. The onboarding form included the login and password for
 
 - Each town page describes the kinds of clients you help there (for example restaurants in Tinley Park, contractors in Crestwood, freelancers in Palos Hills). Please tell us if any of these do not match the clients you want.
 
+### Healthcare practices page (new)
+
+- The page lists the kinds of practices it is for: medical, dental, chiropractic and physical therapy offices, and therapy, counseling and psychiatry group practices. Please add or remove any.
+- It says you work with practices anywhere in the United States by phone, text and email, and that the free consultation for those practices is by phone.
+
 ### Answers that describe tax rules
 
 - Several FAQ answers explain general tax rules in plain English. For example: who needs to make estimated payments, the home office deduction, Schedule C, the lower filing threshold for self-employment income, and filing jointly when one spouse has a business. Please read them once and correct anything you would say differently.
