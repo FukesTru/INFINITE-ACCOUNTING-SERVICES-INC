@@ -49,6 +49,10 @@ for (const [key, val] of [['form_embed', formEmbed], ['chat_widget', chatWidget]
   if (!val) warn('site.json', `integrations.${key} is empty. Get it from the CRM before the first build`);
 }
 
+// A booking link the agency owner approved (site.json booking_link): that exact address, on the listed pages only.
+const bookingLink = (site && typeof site.booking_link === 'object' && site.booking_link) || {};
+const bookingAllowed = (href, page) => href === bookingLink.url && (bookingLink.pages || []).includes(page);
+
 const DASHES = /[–—]/;
 const BOOKING_OR_PAYMENT = /(calendly|acuityscheduling|squareup|square\.site|setmore|\/widget\/booking|\/widget\/appointment|\/widget\/bookings|stripe\.com|paypal\.com|\/checkout)/i;
 const BLOCK = (name, html) => {
@@ -86,7 +90,7 @@ for (const f of pages) {
   if (/breadcrumb/i.test(html)) fail(where, 'contains a breadcrumb. The header menu is the only navigation');
 
   for (const m of html.matchAll(/\b(?:src|href|action)=["']([^"']+)["']/gi)) {
-    if (BOOKING_OR_PAYMENT.test(m[1])) fail(where, `links or embeds ${m[1]}. The site never books and never takes payment`);
+    if (BOOKING_OR_PAYMENT.test(m[1]) && !bookingAllowed(m[1], urlPath(f))) fail(where, `links or embeds ${m[1]}. The site never books and never takes payment`);
   }
   if (/<input[^>]+type=["'](date|time|datetime-local)["']/i.test(html)) {
     fail(where, 'has a date or time picker. The site never books');

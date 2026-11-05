@@ -5,6 +5,10 @@
   "installCommand": "",
   "outputDirectory": "public",
   "trailingSlash": true,
+  "redirects": [
+    { "source": "/healthcare-practices", "destination": "/bookkeeping-cleanup/", "permanent": true },
+    { "source": "/healthcare-practices/", "destination": "/bookkeeping-cleanup/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

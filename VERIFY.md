@@ -58,7 +58,7 @@ One security note first. The onboarding form included the login and password for
 
 - Each town page describes the kinds of clients you help there (for example restaurants in Tinley Park, contractors in Crestwood, freelancers in Palos Hills). Please tell us if any of these do not match the clients you want.
 
-### Healthcare practices page (new)
+### Bookkeeping cleanup page for healthcare practices (new, at /bookkeeping-cleanup/)
 
 - The page lists the kinds of practices it is for: medical, dental, chiropractic and physical therapy offices, and therapy, counseling and psychiatry group practices. Please add or remove any.
 - It says you work with practices anywhere in the United States by phone, text and email, and that the free consultation for those practices is by phone.
