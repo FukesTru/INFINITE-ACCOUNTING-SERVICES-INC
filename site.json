@@ -51,11 +51,11 @@
   "booking_system_current": "Calendly, 30 minute call: https://calendly.com/infiniteaccount/30_minute_call",
   "booking_link": {
     "url": "https://calendly.com/infiniteaccount/30_minute_call",
+    "embed_script": "https://assets.calendly.com/assets/external/widget.js",
     "pages": [
-      "/bookkeeping-cleanup/",
-      "/contact/"
+      "/book/"
     ],
-    "approved": "2026-11-05. Asked for twice (2026-10-28 and 2026-11-05) after being told it is the agency owner's decision. A link that opens in a new tab, never an embedded calendar. tools/check.mjs allows this exact address on these pages only. Contact page added at the operator's request on 2026-11-05."
+    "approved": "2026-11-05, at the operator's request after being told it is the agency owner's decision: first as a link on /bookkeeping-cleanup/ and /contact/, then as a booking page, /book/, with Danielle's Calendly shown in the page. Every Book a free call button on the site goes to /book/. tools/check.mjs allows the Calendly address and its embed script on these pages only; any other booking link or calendar still fails."
   },
   "brand": {
     "colour_main": "#0B2F57",
