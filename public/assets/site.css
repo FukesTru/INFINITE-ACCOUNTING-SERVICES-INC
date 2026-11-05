@@ -285,9 +285,14 @@ strong { font-weight: 650; }
 .brand-sub { font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue); margin-top: 5px; }
 .nav-desktop { display: none; }
 .header-actions { display: none; }
-@media (min-width: 1100px) {
+@media (min-width: 1280px) {
   .nav-desktop { display: block; }
-  .header-actions { display: flex; align-items: center; gap: 12px; flex: none; }
+  .header-actions { display: flex; align-items: center; gap: 8px; flex: none; }
+  .header-bar { gap: 16px; }
+  .nav-list { gap: 0; }
+  .nav-link, .nav-toggle { padding: 10px 8px; }
+  .header-phone { padding: 10px 4px; gap: 6px; }
+  .header-actions .btn { padding: 10px 14px; }
 }
 .nav-list { list-style: none; display: flex; align-items: center; gap: 2px; }
 .nav-list > li { position: relative; }
@@ -305,11 +310,11 @@ strong { font-weight: 650; }
 .header-phone { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--navy); text-decoration: none; padding: 10px 8px; white-space: nowrap; }
 .header-phone .icon { width: 18px; height: 18px; color: var(--green); }
 .header-phone:hover { color: var(--blue); }
-.header-actions .btn { min-height: 46px; padding: 10px 20px; font-size: 16px; }
+.header-actions .btn { min-height: 46px; padding: 10px 16px; font-size: 16px; }
 
 /* mobile menu, a <details> so it also works without scripts */
 .menu-mobile { display: block; }
-@media (min-width: 1100px) { .menu-mobile { display: none; } }
+@media (min-width: 1280px) { .menu-mobile { display: none; } }
 .menu-mobile > summary { list-style: none; cursor: pointer; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 12px; color: var(--navy); }
 .menu-mobile > summary::-webkit-details-marker { display: none; }
 .menu-mobile > summary .icon { width: 28px; height: 28px; }
