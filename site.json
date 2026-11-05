@@ -51,8 +51,11 @@
   "booking_system_current": "Calendly, 30 minute call: https://calendly.com/infiniteaccount/30_minute_call",
   "booking_link": {
     "url": "https://calendly.com/infiniteaccount/30_minute_call",
-    "pages": ["/bookkeeping-cleanup/"],
-    "approved": "2026-11-05. Asked for twice (2026-10-28 and 2026-11-05) after being told it is the agency owner's decision. A link that opens in a new tab, never an embedded calendar. tools/check.mjs allows this exact address on these pages only."
+    "pages": [
+      "/bookkeeping-cleanup/",
+      "/contact/"
+    ],
+    "approved": "2026-11-05. Asked for twice (2026-10-28 and 2026-11-05) after being told it is the agency owner's decision. A link that opens in a new tab, never an embedded calendar. tools/check.mjs allows this exact address on these pages only. Contact page added at the operator's request on 2026-11-05."
   },
   "brand": {
     "colour_main": "#0B2F57",
