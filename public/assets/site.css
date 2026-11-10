@@ -161,7 +161,7 @@ strong { font-weight: 650; }
   .split--wide-right { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
   .split--reverse > :first-child { order: 2; }
   .split--center { align-items: center; }
-  .sticky { position: sticky; top: calc(var(--header-h) + 32px); }
+  .sticky, .sticky-fit { position: sticky; top: calc(var(--header-h) + 32px); }
 }
 .split > * + * { margin-top: 40px; }
 @media (min-width: 1024px) { .split > * + * { margin-top: 0; } }
@@ -666,4 +666,11 @@ strong { font-weight: 650; }
   .contact-top.hero--long .split > div:first-child > :is(.btn-pair, .hero-book) { order: 1; }
   .contact-top.hero--long .btn-pair { margin-top: 20px; }
   .contact-top.hero--long .hero-book { margin-top: 14px; }
+}
+/* On wide screens the text beside the calendar gets equal width and a slightly smaller heading and
+   intro, so the whole column fits on screen and can hold still while the calendar scrolls past. */
+@media (min-width: 1024px) {
+  .contact-top.hero--long .split { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-top.hero--long h1 { font-size: 42px; }
+  .contact-top.hero--long .answer { font-size: 17px; }
 }

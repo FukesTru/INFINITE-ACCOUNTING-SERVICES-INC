@@ -26,6 +26,16 @@
     if (href === here) a.setAttribute("aria-current", "page");
   });
 
+  /* A column that holds still beside a long one (.sticky-fit). If it is taller than the screen, it
+     scrolls until its last line is in view and holds there, so nothing in it is ever out of reach. */
+  var fitCols = document.querySelectorAll(".sticky-fit");
+  function fitSticky() {
+    var bar = document.querySelector(".site-header");
+    var top = (bar ? bar.offsetHeight : 0) + 32;
+    fitCols.forEach(function (el) { el.style.top = Math.min(top, window.innerHeight - el.offsetHeight - 24) + "px"; });
+  }
+  if (fitCols.length) { fitSticky(); window.addEventListener("resize", fitSticky); window.addEventListener("load", fitSticky); }
+
   /* Header shadow once the page scrolls. */
   var header = document.querySelector(".site-header");
   function onScroll() { if (header) header.classList.toggle("is-scrolled", window.scrollY > 8); }
