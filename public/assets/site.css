@@ -657,3 +657,13 @@ strong { font-weight: 650; }
 @media (max-width: 639px) { .hero--long h1 { font-size: 34px; } }
 /* Bespoke Services: the Part 1 and Part 2 labels on the engagement cards. */
 .card .tag { align-self: flex-start; margin-bottom: 14px; }
+/* Top section with a calendar beside the text (Bespoke Services): on phones the call and booking
+   buttons come straight after the heading, so they are on screen before anybody scrolls. */
+@media (max-width: 639px) {
+  .contact-top.hero--long .split > div:first-child { display: flex; flex-direction: column; }
+  .contact-top.hero--long .split > div:first-child > * { order: 2; }
+  .contact-top.hero--long .split > div:first-child > :is(.eyebrow, h1) { order: 0; }
+  .contact-top.hero--long .split > div:first-child > :is(.btn-pair, .hero-book) { order: 1; }
+  .contact-top.hero--long .btn-pair { margin-top: 20px; }
+  .contact-top.hero--long .hero-book { margin-top: 14px; }
+}
