@@ -52,7 +52,8 @@ for (const [key, val] of [['form_embed', formEmbed], ['chat_widget', chatWidget]
 // A booking link the agency owner approved (site.json booking_link): that exact address, on the listed pages only.
 const bookingLink = (site && typeof site.booking_link === 'object' && site.booking_link) || {};
 const bookingAllowed = (href, page) =>
-  (href === bookingLink.url || href === bookingLink.embed_script) && (bookingLink.pages || []).includes(page);
+  (href === bookingLink.url || (bookingLink.url && href.startsWith(bookingLink.url + '?')) || href === bookingLink.embed_script) &&
+  (bookingLink.pages || []).includes(page);
 
 const DASHES = /[–—]/;
 const BOOKING_OR_PAYMENT = /(calendly|acuityscheduling|squareup|square\.site|setmore|\/widget\/booking|\/widget\/appointment|\/widget\/bookings|stripe\.com|paypal\.com|\/checkout)/i;

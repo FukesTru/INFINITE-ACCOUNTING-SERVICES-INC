@@ -63,6 +63,12 @@ One security note first. The onboarding form included the login and password for
 - The page lists the kinds of practices it is for: medical, dental, chiropractic and physical therapy offices, and therapy, counseling and psychiatry group practices. Please add or remove any.
 - It says you work with practices anywhere in the United States by phone, text and email, and that the free consultation for those practices is by phone.
 
+### Bespoke Services page (new, at /services/bespoke-services/)
+
+- That you keep separate, consistent books for each location or company a practice owner has.
+- That you record pay for staff and clinicians, whether they are employees or contractors (this overlaps the payroll support question above).
+- That calls about a bespoke engagement can be by phone or video, as your Calendly says the 30 minute call uses web conferencing.
+
 ### Answers that describe tax rules
 
 - Several FAQ answers explain general tax rules in plain English. For example: who needs to make estimated payments, the home office deduction, Schedule C, the lower filing threshold for self-employment income, and filing jointly when one spouse has a business. Please read them once and correct anything you would say differently.

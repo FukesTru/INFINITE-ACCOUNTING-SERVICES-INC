@@ -53,9 +53,10 @@
     "url": "https://calendly.com/infiniteaccount/30_minute_call",
     "embed_script": "https://assets.calendly.com/assets/external/widget.js",
     "pages": [
-      "/book/"
+      "/book/",
+      "/services/bespoke-services/"
     ],
-    "approved": "2026-11-05, at the operator's request after being told it is the agency owner's decision: first as a link on /bookkeeping-cleanup/ and /contact/, then as a booking page, /book/, with Danielle's Calendly shown in the page. Every Book a free call button on the site goes to /book/. tools/check.mjs allows the Calendly address and its embed script on these pages only; any other booking link or calendar still fails."
+    "approved": "2026-11-05, at the operator's request after being told it is the agency owner's decision: first as a link on /bookkeeping-cleanup/ and /contact/, then as a booking page, /book/, with Danielle's Calendly shown in the page. Every Book a free call button on the site goes to /book/. tools/check.mjs allows the Calendly address and its embed script on these pages only; any other booking link or calendar still fails. The Bespoke Services page (/services/bespoke-services/, brought over from the operator's separate build on 2026-11-10) shows the same calendar in its booking section, loaded only when a visitor heads for it."
   },
   "brand": {
     "colour_main": "#0B2F57",
